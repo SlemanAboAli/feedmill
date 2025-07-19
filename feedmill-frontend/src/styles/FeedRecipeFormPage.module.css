@@ -1,0 +1,204 @@
+/* .formContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #fff;
+} */
+.formContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #f9f9fc;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formContainer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.grid2Cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.formContainer input,
+.formContainer textarea,
+.formContainer select {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #dcdde1;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus,
+.formContainer select:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
+}
+
+.formContainer textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* .grid2Cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+} */
+
+.linesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.linesTable th,
+.linesTable td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.addLineBtn {
+  margin-bottom: 1rem;
+}
+.linesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.linesTable th,
+.linesTable td {
+  padding: 0.5rem;
+  border: 1px solid #e1e4e8;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.colIndex {
+  width: 40px;
+  text-align: center;
+}
+
+.colProduct {
+  width: 250px;
+}
+
+.colQty,
+.colPrice,
+.colUom,
+.colLineCost {
+  width: 100px;
+  text-align: center;
+}
+
+.colDelete {
+  width: 60px;
+  text-align: center;
+}
+
+.linesTable input {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+
+/* .submitBtn {
+  background: #2d8d7c;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .error {
+  color: crimson;
+  font-size: 0.75rem;
+} */
+
+.addLineBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.addLineBtn:hover {
+  background-color: #45a049;
+}
+
+.submitBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #0069d9;
+}
+
+.summaryBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f7f9fc;
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  gap: 1rem;
+}
+
+.summaryBox div {
+  flex: 1;
+  text-align: center;
+}

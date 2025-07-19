@@ -1,0 +1,49 @@
+.scroll-button {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #800040;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 1000;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* عند hover يدور الزر لكن يبقى السهم ثابت */
+.scroll-button:hover {
+  transform: rotate(45deg);
+  background-color: #b3005a;
+}
+
+/* العنصر الداخلي للسهم */
+.scroll-button .arrow {
+  font-size: 24px;
+  pointer-events: none; 
+  transition: transform 0.4s ease;
+  
+}
+.scroll-button:hover .arrow {
+  transform: rotate(-45deg); /* يعاكس دوران الزر */
+}
+.scroll-button.up {
+  bottom: auto;
+  
+  top: -30px; /* لإخفائه من الأعلى */
+ /* transform-origin: center bottom;*/
+}
+
+.scroll-button.up:hover {
+  top: 10px;
+   transform: rotate(45deg);
+  background-color: #006600;
+}

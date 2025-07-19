@@ -1,0 +1,43 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.horizontal {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  overflow-x: visible; /* <--- هذا مهم */
+  position: relative; /* <--- هذا مهم أيضًا */
+}
+
+
+.horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.toggleButton {
+  background-color: #77002e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggleButton:hover {
+  background-color: #a52a4d;
+  transform: scale(1.05);
+}
